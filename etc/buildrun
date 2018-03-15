@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+export LD_LIBRARY_PATH=../target/release
+gcc c_jaro_winkler.c -Ofast -o c_jaro_winkler -L"$LD_LIBRARY_PATH" -ljaro_winkler
+./c_jaro_winkler "$@"

@@ -1,0 +1,12 @@
+[package]
+name = "jaro-winkler"
+version = "0.1.0"
+authors = ["Brendan Gadd"]
+
+publish = false
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+strsim = "0.7.0"
